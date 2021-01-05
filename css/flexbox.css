@@ -1,11 +1,114 @@
-.cabecalhoPrincipal .container{
-    display: flex ;
-    align-items: center;
-    justify-content: space-between;
+.cabecalhoPrincipal .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.cabecalhoPrincipal .cabecalhoPrincipal-nav{
-    display: flex;
+.cabecalhoPrincipal .cabecalhoPrincipal-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rodapePrincipal .rodapePrincipal-navMap .rodapePrincipal-navMap-list {
+  display: flex;
+  /* flex-direction: column;
+  flex-wrap: wrap; */
+  height: 280px;
+  flex-flow: column wrap;
+}
+
+.rodapePrincipal .rodapePrincipal-patrocinadores .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rodapePrincipal
+  .rodapePrincipal-patrocinadores
+  .rodapePrincipal-contatoForm-fieldset {
+  display: flex;
+}
+
+.rodapePrincipal .rodapePrincipal-patrocinadores .rodapePrincipal-contatoForm {
+  width: 25%;
+}
+
+.rodapePrincipal
+  .rodapePrincipal-patrocinadores
+  .rodapePrincipal-patrocinadores-list {
+  display: flex;
+  align-items: center;
+  width: 75%;
+  justify-content: space-around;
+}
+
+.conteudoPrincipal-cursos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.conteudoPrincipal-cursos-link {
+  width: 20%;
+  margin: 1%;
+}
+
+.videoSobre .container {
+  display: flex;
+}
+
+.videoSobre .videoSobre-sobre {
+  display: flex;
+  flex-wrap: wrap;
+  width: 40%;
+  justify-content: center;
+}
+
+/* Mobile */
+@media (max-width: 1000px) {
+  .cabecalhoPrincipal .cabecalhoPrincipal-nav,
+  .cabecalhoPrincipal .container {
+    flex-direction: column;
+    align-items: initial;
+    text-align: center;
+  }
+
+  .conteudoPrincipal-cursos-link {
+    width: 100%;
     align-items: center;
-    justify-content: space-between;
+  }
+
+  .rodapePrincipal .rodapePrincipal-navMap .rodapePrincipal-navMap-list {
+    height: auto;
+  }
+
+  .rodapePrincipal .rodapePrincipal-patrocinadores .container {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+
+  .rodapePrincipal
+    .rodapePrincipal-patrocinadores
+    .rodapePrincipal-contatoForm {
+    width: auto;
+  }
+
+  .rodapePrincipal
+    .rodapePrincipal-patrocinadores
+    .rodapePrincipal-patrocinadores-list {
+    width: 100%;
+  }
+
+  .cabecalhoPrincipal-nav-link-app{
+      order: -1;
+  }
+
+  .videoSobre .videoSobre-video{
+      flex-shrink: 2;
+  }
+  .videoSobre .container {
+      flex-direction: column;
+      align-items: center;
+  }
 }

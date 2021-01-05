@@ -282,6 +282,14 @@ body {
 		margin-left: 1.5em;
 	}
 
+	.videoSobre iframe{
+		width: 50%;
+	}
+
+	.videoSobre-sobre .videoSobre-sobre-item{
+		text-align: center;
+	}
+
 }
 
 
